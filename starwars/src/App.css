@@ -2,7 +2,29 @@
   text-align: center;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  background: url("https://s3.amazonaws.com/wp_media-prod/app/uploads/2015/10/21135602/star-wars-space.jpg");
+  color: black;
+  text-shadow: 1px 1px 5px #f9d71c;
+  height: 125px;
+  margin-top: 0px;
+  padding-top: 50px;
+  font-family: "STARWARS";
+  font-size: 5rem;
+  box-shadow: 0 -7px 9px -7px white inset;
 }
-/* write your parent styles in here for your App.js */
+
+.Header:hover {
+  animation: neon3 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f9d71c,
+      0 0 70px #f9d71c, 0 0 80px #f9d71c, 0 0 100px #f9d71c, 0 0 150px #f9d71c;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f9d71c,
+      0 0 35px #f9d71c, 0 0 40px #f9d71c, 0 0 50px #f9d71c, 0 0 75px #f9d71c;
+  }
+}
